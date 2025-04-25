@@ -1,0 +1,48 @@
+{
+    "name": "hyperf/rpc-server",
+    "description": "An abstract rpc server component for Hyperf.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "swoole",
+        "hyperf",
+        "rpc",
+        "rpc-server"
+    ],
+    "homepage": "https://hyperf.io",
+    "support": {
+        "issues": "https://github.com/hyperf/hyperf/issues",
+        "source": "https://github.com/hyperf/hyperf",
+        "docs": "https://hyperf.wiki",
+        "pull-request": "https://github.com/hyperf/hyperf/pulls"
+    },
+    "require": {
+        "php": ">=8.1",
+        "hyperf/http-server": "~3.1.0",
+        "hyperf/rpc": "~3.1.0"
+    },
+    "suggest": {
+        "hyperf/di": "Required to use annotations."
+    },
+    "autoload": {
+        "psr-4": {
+            "Hyperf\\RpcServer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\RpcServer\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.1-dev"
+        },
+        "hyperf": {
+            "config": "Hyperf\\RpcServer\\ConfigProvider"
+        }
+    }
+}

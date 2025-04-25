@@ -1,0 +1,58 @@
+{
+    "name": "hyperf/async-queue",
+    "description": "A async queue component for hyperf.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "async-queue"
+    ],
+    "homepage": "https://hyperf.io",
+    "support": {
+        "issues": "https://github.com/hyperf/hyperf/issues",
+        "source": "https://github.com/hyperf/hyperf",
+        "docs": "https://hyperf.wiki",
+        "pull-request": "https://github.com/hyperf/hyperf/pulls"
+    },
+    "require": {
+        "php": ">=8.1",
+        "hyperf/codec": "~3.1.0",
+        "hyperf/collection": "~3.1.0",
+        "hyperf/command": "~3.1.0",
+        "hyperf/contract": "~3.1.0",
+        "hyperf/support": "~3.1.0",
+        "hyperf/utils": "~3.1.0",
+        "psr/container": "^1.0 || ^2.0",
+        "psr/event-dispatcher": "^1.0"
+    },
+    "suggest": {
+        "hyperf/di": "Required to use annotations.",
+        "hyperf/event": "Required to dispatch a event.",
+        "hyperf/logger": "Required to use QueueHandleListener.",
+        "hyperf/process": "Auto register the consumer process for server."
+    },
+    "autoload": {
+        "psr-4": {
+            "Hyperf\\AsyncQueue\\": "src/"
+        },
+        "files": [
+            "src/Functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\AsyncQueue\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.1-dev"
+        },
+        "hyperf": {
+            "config": "Hyperf\\AsyncQueue\\ConfigProvider"
+        }
+    }
+}
