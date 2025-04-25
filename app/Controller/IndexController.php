@@ -24,15 +24,4 @@ class IndexController extends AbstractController
             'message' => "Hello {$user}.",
         ];
     }
-
-    public function test()
-    {
-        $user = $this->request->input('user', 'Test');
-        $method = $this->request->getMethod();
-
-        return [
-            'method' => $method,
-            'message' => "Hello {$user}.",
-        ];
-    }
 }
